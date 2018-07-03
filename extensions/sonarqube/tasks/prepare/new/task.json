@@ -1,13 +1,13 @@
 {
-  "id": "15B84CA1-B62F-4A2A-A403-89B77A063157",
-  "name": "SonarQubePrepare",
-  "friendlyName": "Prepare Analysis Configuration",
+  "id": "15B84CA1-B62F-4A2A-A403-89B77A063000",
+  "name": "SonarQubePrepare_negorov",
+  "friendlyName": "Prepare Analysis Configuration negorov",
   "description": "Prepare SonarQube analysis configuration",
   "helpMarkDown":
     "[More Information](http://redirect.sonarsource.com/doc/install-configure-scanner-tfs-ts.html)",
   "category": "Build",
   "visibility": ["Build"],
-  "author": "sonarsource",
+  "author": "sonarsource_negorov",
   "version": {
     "Major": 4,
     "Minor": 3,

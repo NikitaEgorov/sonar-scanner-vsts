@@ -62,13 +62,13 @@ async function populateBranchAndPrProps(props: { [key: string]: string }) {
   const prId = tl.getVariable('System.PullRequest.PullRequestId');
   const provider = tl.getVariable('Build.Repository.Provider');
   if (prId) {
-    props['sonar.pullrequest.key'] = prId;
-    props['sonar.pullrequest.base'] = branchName(tl.getVariable('System.PullRequest.TargetBranch'));
-    props['sonar.pullrequest.branch'] = branchName(
+    props['sonar.pullrequest.vsts.key'] = prId;
+    props['sonar.pullrequest.vsts.base'] = branchName(tl.getVariable('System.PullRequest.TargetBranch'));
+    props['sonar.pullrequest.vsts.branch'] = branchName(
       tl.getVariable('System.PullRequest.SourceBranch')
     );
     if (provider === 'TfsGit') {
-      props['sonar.pullrequest.provider'] = 'vsts';
+      props['sonar.pullrequest.vsts.provider'] = 'vsts';
       props['sonar.pullrequest.vsts.instanceUrl'] = collectionUrl;
       props['sonar.pullrequest.vsts.project'] = tl.getVariable('System.TeamProject');
       props['sonar.pullrequest.vsts.repository'] = tl.getVariable(REPO_NAME_VAR);

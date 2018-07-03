@@ -1,14 +1,14 @@
 {
-  "id": "291ed61f-1ee4-45d3-b1b0-bf822d9095ef",
-  "name": "SonarQubePublish",
-  "friendlyName": "Publish Quality Gate Result",
+  "id": "291ed61f-1ee4-45d3-b1b0-bf822d909000",
+  "name": "SonarQubePublish_negorov",
+  "friendlyName": "Publish Quality Gate Result negorov",
   "description":
     "Publish SonarQube's Quality Gate result on the VSTS/TFS build result, to be used after the actual analysis.",
   "helpMarkDown":
     "[More Information](http://redirect.sonarsource.com/doc/install-configure-scanner-tfs-ts.html)",
   "category": "Build",
   "visibility": ["Build"],
-  "author": "sonarsource",
+  "author": "sonarsource_Negorov",
   "version": {
     "Major": 4,
     "Minor": 3,
